@@ -83,3 +83,20 @@
   - `agent-browser errors`: no page errors returned.
 - Updated tracked example proof bundle from the latest generated output.
 - Set local git author to Gabriel: `Gabriel Antony Xaviour <gabrielantony56@gmail.com>`.
+
+## 2026-05-21 06:45 IST
+
+- Created and pushed public GitHub repo:
+  - `https://github.com/gabrielantonyxaviour/paid-receipt-publisher-xlayer`
+  - commit `cb0d1b9`, author `Gabriel Antony Xaviour <gabrielantony56@gmail.com>`
+  - `gh repo view` verified `visibility=PUBLIC`, `isPrivate=false`, owner `gabrielantonyxaviour`.
+- Added GitHub Pages support:
+  - demo build uses `VITE_BASE_PATH=/paid-receipt-publisher-xlayer/`;
+  - pushed static build to `gh-pages`;
+  - GitHub Pages source is `gh-pages` `/`, status `built`.
+- Public demo verified:
+  - `https://gabrielantonyxaviour.github.io/paid-receipt-publisher-xlayer/` returned HTTP 200;
+  - public `proof-bundle.json` returned 5 receipts;
+  - `agent-browser` screenshot captured at `outputs/screenshots/public-demo-1440.png`;
+  - `agent-browser errors`: no page errors returned.
+- Final builder report written to `outputs/builder-report.md`.

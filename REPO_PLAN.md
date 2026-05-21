@@ -19,13 +19,20 @@ Use `gh` because the authenticated CLI account exactly matches the verified brow
 
 ## Push Steps
 
-1. Build and test locally.
-2. Ensure no `.env`, private keys, API keys, or generated secrets are tracked.
-3. Create public GitHub repo with `gh repo create`.
-4. Set `origin`.
-5. Push `main`.
-6. Verify public visibility with `gh repo view ... --json visibility,url,isPrivate`.
+1. Build and test locally. Done.
+2. Ensure no `.env`, private keys, API keys, or generated secrets are tracked. Done.
+3. Create public GitHub repo with `gh repo create`. Done.
+4. Set `origin`. Done.
+5. Push `main`. Done.
+6. Verify public visibility with `gh repo view ... --json visibility,url,isPrivate`. Done.
+7. Publish static demo to `gh-pages`. Done.
 
 ## Current Status
 
-As of 2026-05-21 06:00 IST, `gh repo view gabrielantonyxaviour/paid-receipt-publisher-xlayer` returned no repo data, so the repo did not already exist.
+As of 2026-05-21 06:42 IST:
+
+- Repo URL: `https://github.com/gabrielantonyxaviour/paid-receipt-publisher-xlayer`
+- Visibility proof: `visibility=PUBLIC`, `isPrivate=false`, owner `gabrielantonyxaviour`, default branch `main`.
+- Initial implementation commit pushed: `cb0d1b9` as `Gabriel Antony Xaviour <gabrielantony56@gmail.com>`.
+- Demo URL: `https://gabrielantonyxaviour.github.io/paid-receipt-publisher-xlayer/`
+- Pages proof: GitHub Pages source is `gh-pages` `/`, status `built`, public URL returned HTTP 200.

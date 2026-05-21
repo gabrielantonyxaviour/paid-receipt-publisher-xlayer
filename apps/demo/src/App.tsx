@@ -11,7 +11,7 @@ export function App() {
 
   useEffect(() => {
     let ignore = false;
-    fetch("/proof-bundle.json")
+    fetch(`${import.meta.env.BASE_URL}proof-bundle.json`)
       .then((response) => (response.ok ? response.json() : Promise.reject()))
       .then((data: ProofBundle) => {
         if (!ignore) {

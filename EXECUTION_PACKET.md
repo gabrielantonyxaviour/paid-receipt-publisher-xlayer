@@ -54,8 +54,8 @@ pnpm anchor:xlayer
 
 ## Links
 
-- GitHub: pending
-- Demo: local first at `http://127.0.0.1:5179/`; hosted URL pending
+- GitHub: `https://github.com/gabrielantonyxaviour/paid-receipt-publisher-xlayer`
+- Demo: `https://gabrielantonyxaviour.github.io/paid-receipt-publisher-xlayer/`
 - OKX plugin page: `https://web3.okx.com/onchainos/plugins/detail/okx-buildx-hackathon-agent-track`
 - X Layer testnet RPC proof: chain id `1952`, block `30864734`
 
@@ -69,6 +69,6 @@ pnpm anchor:xlayer
 - [x] Proof bundle generated
 - [x] Demo UI implemented
 - [x] UI inspected at desktop/mobile
-- [ ] Public repo pushed
+- [x] Public repo pushed
 - [x] Submission portal status documented
-- [ ] Builder report written
+- [x] Builder report written

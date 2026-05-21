@@ -1,7 +1,7 @@
 # Paid Receipt Publisher Proof Bundle
 
-Generated: 2026-05-21T01:01:00.539Z
-Chain root: `0x883cb3531eb4eae741eec31598f5a32298cfc2376c1798bc39807e6cea3faa28`
+Generated: 2026-05-21T01:05:23.643Z
+Chain root: `0x100863767a2c8b6197554790568c81bab1e2b6344a0b646d8f9ddc8d4b350228`
 Publish status: blocked
 
 ## Receipts
@@ -13,7 +13,7 @@ Publish status: blocked
 - Amount: 0.0100 USDC
 - Policy: approved: under 0.05 USDC cap and known vendor
 - External action: x402 service payment (prepared)
-- Receipt hash: `0x47148c47386d0d3c93c6adc6ba48a4a33cd233efb7a569636d533cc79149689c`
+- Receipt hash: `0xff3304b34d629358cf14e756d1efaa89df80f2533fcb392d409b4a1a1c717632`
 - Previous hash: `0x0000000000000000000000000000000000000000000000000000000000000000`
 
 ### swap: rcpt-swap-001
@@ -23,8 +23,8 @@ Publish status: blocked
 - Amount: 0.0025 OKB
 - Policy: blocked: no wallet approval for live DEX route
 - External action: OKX DEX / Uniswap route (blocked)
-- Receipt hash: `0xa52317f34f1cd000a8bd7b0c6689e0038f2dcb131204aecc2b8b53b28efa383e`
-- Previous hash: `0x47148c47386d0d3c93c6adc6ba48a4a33cd233efb7a569636d533cc79149689c`
+- Receipt hash: `0xb01a211ca7160c1b25bd2bc1fea259f66ab2a78ca0fa3dfa6ff9c71429f67c75`
+- Previous hash: `0xff3304b34d629358cf14e756d1efaa89df80f2533fcb392d409b4a1a1c717632`
 
 ### denial: rcpt-denial-001
 
@@ -33,8 +33,8 @@ Publish status: blocked
 - Amount: 0.2500 USDC
 - Policy: denied: exceeds skill spend cap and vendor is not allowlisted
 - External action: policy gate (observed)
-- Receipt hash: `0xc281a0efb2137c49718dca804c1c9f8acdc6364e6a4181649416bb60d8b08ba1`
-- Previous hash: `0xa52317f34f1cd000a8bd7b0c6689e0038f2dcb131204aecc2b8b53b28efa383e`
+- Receipt hash: `0x0ee94d1644aad52f078540ceed9bb86a7ef25dba6e3b34a31c74e25680a3b1fc`
+- Previous hash: `0xb01a211ca7160c1b25bd2bc1fea259f66ab2a78ca0fa3dfa6ff9c71429f67c75`
 
 ### refund: rcpt-refund-001
 
@@ -43,8 +43,8 @@ Publish status: blocked
 - Amount: 0.0100 USDC
 - Policy: prepared: refund path available after failed SLA
 - External action: refund transfer (prepared)
-- Receipt hash: `0xbb468e85bb8634d0808e123329651cbf46dfed033640f2154345c80c243c0053`
-- Previous hash: `0xc281a0efb2137c49718dca804c1c9f8acdc6364e6a4181649416bb60d8b08ba1`
+- Receipt hash: `0x9fc8ed05a2d73d29c8c3762e0b77dc52da2c26f4c8b5e9780f160d9e3d273013`
+- Previous hash: `0x0ee94d1644aad52f078540ceed9bb86a7ef25dba6e3b34a31c74e25680a3b1fc`
 
 ### service_result: rcpt-result-001
 
@@ -53,8 +53,8 @@ Publish status: blocked
 - Amount: 0 N/A
 - Policy: settled-local: proof bundle generated and signature verified
 - External action: proof bundle export (settled)
-- Receipt hash: `0x883cb3531eb4eae741eec31598f5a32298cfc2376c1798bc39807e6cea3faa28`
-- Previous hash: `0xbb468e85bb8634d0808e123329651cbf46dfed033640f2154345c80c243c0053`
+- Receipt hash: `0x100863767a2c8b6197554790568c81bab1e2b6344a0b646d8f9ddc8d4b350228`
+- Previous hash: `0x9fc8ed05a2d73d29c8c3762e0b77dc52da2c26f4c8b5e9780f160d9e3d273013`
 
 ## Live Read Proof
 

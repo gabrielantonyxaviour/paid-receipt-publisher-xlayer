@@ -38,10 +38,13 @@ No fields were prefilled. There is no safe draft form available in the observed 
 
 ## Assets Still Missing
 
-- Public repo URL
-- Hosted demo URL
 - Demo video
 - Live contract address / transaction hash, if wallet access is later authorized
+
+## Assets Ready
+
+- Public repo URL: `https://github.com/gabrielantonyxaviour/paid-receipt-publisher-xlayer`
+- Hosted demo URL: `https://gabrielantonyxaviour.github.io/paid-receipt-publisher-xlayer/`
 
 ## Blockers
 

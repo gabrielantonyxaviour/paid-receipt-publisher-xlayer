@@ -27,6 +27,12 @@ Open the local app:
 http://localhost:5179
 ```
 
+Public demo:
+
+```bash
+https://gabrielantonyxaviour.github.io/paid-receipt-publisher-xlayer/
+```
+
 ## Live Chain Status
 
 Read access to X Layer was verified on 2026-05-21:

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-21T01:01:00.539Z",
+  "generatedAt": "2026-05-21T01:05:23.643Z",
   "project": "Paid Receipt Publisher",
-  "chainRoot": "0x883cb3531eb4eae741eec31598f5a32298cfc2376c1798bc39807e6cea3faa28",
+  "chainRoot": "0x100863767a2c8b6197554790568c81bab1e2b6344a0b646d8f9ddc8d4b350228",
   "receipts": [
     {
       "id": "rcpt-payment-001",
@@ -13,7 +13,7 @@
       "network": "xlayer-testnet",
       "policy": "approved: under 0.05 USDC cap and known vendor",
       "memo": "Paid data request receipt prepared for x402-style service access.",
-      "timestamp": "2026-05-21T01:01:00.539Z",
+      "timestamp": "2026-05-21T01:05:23.643Z",
       "externalAction": {
         "label": "x402 service payment",
         "status": "prepared",
@@ -22,11 +22,11 @@
         "blocker": "No authorized x402 wallet key in this session."
       },
       "previousHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-      "receiptHash": "0x47148c47386d0d3c93c6adc6ba48a4a33cd233efb7a569636d533cc79149689c",
+      "receiptHash": "0xff3304b34d629358cf14e756d1efaa89df80f2533fcb392d409b4a1a1c717632",
       "signature": {
         "scheme": "ed25519",
-        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA5PBKdE3jc0ewVrWq/zl1xQ4wyELOX6KtT+2Swi0XRcI=\n-----END PUBLIC KEY-----\n",
-        "valueBase64": "lZNOjcgIdC2cvD8QMdY8oY14sYWnayagxYyMymVhb1n7oEVrSPQYR8uzL4TleL9r4i70F9pJqPxJbdRSJZDXDg=="
+        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAGLeEvqBD+6yR2ZHHeXDfqXJJ3zpKClVWIGmVGoO8xP8=\n-----END PUBLIC KEY-----\n",
+        "valueBase64": "WSj82MXejGcTd8G+gwWb22mBZ0Mdp81pmIxKjhv021PrrT2R1dzbRgVl2H1hXpngkQyXjhbJNjEEgzo95wX2BQ=="
       }
     },
     {
@@ -39,7 +39,7 @@
       "network": "xlayer-mainnet",
       "policy": "blocked: no wallet approval for live DEX route",
       "memo": "Swap receipt records the intended route without inventing a transaction.",
-      "timestamp": "2026-05-21T01:01:00.539Z",
+      "timestamp": "2026-05-21T01:05:23.643Z",
       "externalAction": {
         "label": "OKX DEX / Uniswap route",
         "status": "blocked",
@@ -47,12 +47,12 @@
         "url": null,
         "blocker": "Connect wallet and approve route before publishing a swap receipt."
       },
-      "previousHash": "0x47148c47386d0d3c93c6adc6ba48a4a33cd233efb7a569636d533cc79149689c",
-      "receiptHash": "0xa52317f34f1cd000a8bd7b0c6689e0038f2dcb131204aecc2b8b53b28efa383e",
+      "previousHash": "0xff3304b34d629358cf14e756d1efaa89df80f2533fcb392d409b4a1a1c717632",
+      "receiptHash": "0xb01a211ca7160c1b25bd2bc1fea259f66ab2a78ca0fa3dfa6ff9c71429f67c75",
       "signature": {
         "scheme": "ed25519",
-        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA5PBKdE3jc0ewVrWq/zl1xQ4wyELOX6KtT+2Swi0XRcI=\n-----END PUBLIC KEY-----\n",
-        "valueBase64": "myLmq+0aAhwlqHLTMaV8weRbwkoH9ZIdObduQPqDYjJfvv3sOrtwjl9LKcwwk/Rxy9sWQCob0KKkcrQks5vcCQ=="
+        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAGLeEvqBD+6yR2ZHHeXDfqXJJ3zpKClVWIGmVGoO8xP8=\n-----END PUBLIC KEY-----\n",
+        "valueBase64": "956X/WuQRjDDhbmHwLENAOwuVKiSbyLkjELtXCzGiCr74viV4AT0mAooX+Uwb6lg5l6ox1VG7pcDO461JHlqDQ=="
       }
     },
     {
@@ -65,7 +65,7 @@
       "network": "xlayer-testnet",
       "policy": "denied: exceeds skill spend cap and vendor is not allowlisted",
       "memo": "Denial receipts make blocked autonomous spends auditable.",
-      "timestamp": "2026-05-21T01:01:00.539Z",
+      "timestamp": "2026-05-21T01:05:23.643Z",
       "externalAction": {
         "label": "policy gate",
         "status": "observed",
@@ -73,12 +73,12 @@
         "url": null,
         "blocker": null
       },
-      "previousHash": "0xa52317f34f1cd000a8bd7b0c6689e0038f2dcb131204aecc2b8b53b28efa383e",
-      "receiptHash": "0xc281a0efb2137c49718dca804c1c9f8acdc6364e6a4181649416bb60d8b08ba1",
+      "previousHash": "0xb01a211ca7160c1b25bd2bc1fea259f66ab2a78ca0fa3dfa6ff9c71429f67c75",
+      "receiptHash": "0x0ee94d1644aad52f078540ceed9bb86a7ef25dba6e3b34a31c74e25680a3b1fc",
       "signature": {
         "scheme": "ed25519",
-        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA5PBKdE3jc0ewVrWq/zl1xQ4wyELOX6KtT+2Swi0XRcI=\n-----END PUBLIC KEY-----\n",
-        "valueBase64": "Dl9HZicH0F7zaCJ7KCgoFS+gEZXardawTTAQYbBjGFULTWreh4jse650kosMc4tNNEBEg3BrRkfwTDmxAXx9DA=="
+        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAGLeEvqBD+6yR2ZHHeXDfqXJJ3zpKClVWIGmVGoO8xP8=\n-----END PUBLIC KEY-----\n",
+        "valueBase64": "P+0qnayGWsIqAcdncBbvsTw/fnMkKKYkWufzdFk6hYaGU7Dqc2Dx9fYv7q+BLtAoX8WXNryhIV45bOHxovEIBQ=="
       }
     },
     {
@@ -91,7 +91,7 @@
       "network": "xlayer-testnet",
       "policy": "prepared: refund path available after failed SLA",
       "memo": "Refund receipt links post-service remediation to the same proof chain.",
-      "timestamp": "2026-05-21T01:01:00.539Z",
+      "timestamp": "2026-05-21T01:05:23.643Z",
       "externalAction": {
         "label": "refund transfer",
         "status": "prepared",
@@ -99,12 +99,12 @@
         "url": null,
         "blocker": "Refund publish awaits funded test wallet."
       },
-      "previousHash": "0xc281a0efb2137c49718dca804c1c9f8acdc6364e6a4181649416bb60d8b08ba1",
-      "receiptHash": "0xbb468e85bb8634d0808e123329651cbf46dfed033640f2154345c80c243c0053",
+      "previousHash": "0x0ee94d1644aad52f078540ceed9bb86a7ef25dba6e3b34a31c74e25680a3b1fc",
+      "receiptHash": "0x9fc8ed05a2d73d29c8c3762e0b77dc52da2c26f4c8b5e9780f160d9e3d273013",
       "signature": {
         "scheme": "ed25519",
-        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA5PBKdE3jc0ewVrWq/zl1xQ4wyELOX6KtT+2Swi0XRcI=\n-----END PUBLIC KEY-----\n",
-        "valueBase64": "YMbzgMZWgd2C4insz75WkRwCFELJCsidI9rPmSE2fWDwa4mUk56fwemsPinx42N74hK3DPR67ZOHRtl0O3RaDw=="
+        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAGLeEvqBD+6yR2ZHHeXDfqXJJ3zpKClVWIGmVGoO8xP8=\n-----END PUBLIC KEY-----\n",
+        "valueBase64": "Bete8vCkMTwgDDBS/NXiLkbMM754LCGKZLVU6qf/ZyGFnLO3eLAUBIdSR9STQaCxaPWxA6+zrUFPyeuG2FlSBQ=="
       }
     },
     {
@@ -117,7 +117,7 @@
       "network": "local-proof",
       "policy": "settled-local: proof bundle generated and signature verified",
       "memo": "Final receipt seals the local proof bundle before optional X Layer anchoring.",
-      "timestamp": "2026-05-21T01:01:00.539Z",
+      "timestamp": "2026-05-21T01:05:23.643Z",
       "externalAction": {
         "label": "proof bundle export",
         "status": "settled",
@@ -125,12 +125,12 @@
         "url": "outputs/proof-bundle.json",
         "blocker": null
       },
-      "previousHash": "0xbb468e85bb8634d0808e123329651cbf46dfed033640f2154345c80c243c0053",
-      "receiptHash": "0x883cb3531eb4eae741eec31598f5a32298cfc2376c1798bc39807e6cea3faa28",
+      "previousHash": "0x9fc8ed05a2d73d29c8c3762e0b77dc52da2c26f4c8b5e9780f160d9e3d273013",
+      "receiptHash": "0x100863767a2c8b6197554790568c81bab1e2b6344a0b646d8f9ddc8d4b350228",
       "signature": {
         "scheme": "ed25519",
-        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA5PBKdE3jc0ewVrWq/zl1xQ4wyELOX6KtT+2Swi0XRcI=\n-----END PUBLIC KEY-----\n",
-        "valueBase64": "ks3qSvJNyBgqNCHl4OoCsIvwqcYy55V666qwwyNCopCPnzZ5hoNc9JBjobw7OVl53IxtDU6k86Z06GwXrZfaBQ=="
+        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAGLeEvqBD+6yR2ZHHeXDfqXJJ3zpKClVWIGmVGoO8xP8=\n-----END PUBLIC KEY-----\n",
+        "valueBase64": "AsaC5ytimCCts1b/NVMPt0/ucUDlYyFAkv53QzwOLWtaJnDvY3bUhXjQwMcXn1EKsn8dbZpi++zgcBSFEbvvCw=="
       }
     }
   ],
