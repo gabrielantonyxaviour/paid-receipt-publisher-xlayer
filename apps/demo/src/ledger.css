@@ -1,0 +1,249 @@
+.ledger-section,
+.read-proof {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 94px 28px;
+}
+
+.section-heading {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 36px;
+  max-width: 760px;
+}
+
+.section-heading .eyebrow {
+  letter-spacing: 0.06em;
+}
+
+.section-lede {
+  margin: 0;
+  color: rgba(247, 233, 207, 0.62);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-lede code {
+  color: var(--paper);
+}
+
+.receipt-list {
+  display: grid;
+  border-top: 1px solid var(--paper-line);
+}
+
+.receipt-row {
+  display: grid;
+  grid-template-columns: 56px minmax(150px, 0.5fr) minmax(0, 1fr) minmax(
+      200px,
+      0.55fr
+    );
+  gap: 20px;
+  align-items: center;
+  min-height: 80px;
+  padding: 20px 4px;
+  border: 0;
+  border-bottom: 1px solid var(--paper-line);
+  background: transparent;
+  color: rgba(247, 233, 207, 0.66);
+  text-align: left;
+  transition:
+    color 160ms ease,
+    background 160ms ease,
+    padding 160ms ease;
+}
+
+.receipt-row:hover,
+.receipt-row.active {
+  color: var(--paper);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 233, 207, 0.04),
+    transparent 80%
+  );
+  padding-left: 14px;
+}
+
+.receipt-row.active {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 233, 207, 0.07),
+    transparent 80%
+  );
+}
+
+.receipt-index {
+  color: var(--paper-mute);
+  font-family: "SFMono-Regular", "Cascadia Code", ui-monospace, monospace;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+.receipt-kind {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.receipt-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  background: linear-gradient(
+    140deg,
+    var(--receipt-accent),
+    var(--receipt-deep)
+  );
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+}
+
+.receipt-hash {
+  color: rgba(247, 233, 207, 0.78);
+  font-size: 13px;
+}
+
+.receipt-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  justify-self: end;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.receipt-network {
+  color: rgba(247, 233, 207, 0.56);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.proof-lines {
+  display: grid;
+  gap: 12px;
+}
+
+.proof-line {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(160px, 0.4fr);
+  gap: 20px;
+  padding: 18px 20px;
+  border: 1px solid var(--paper-line);
+  background: rgba(247, 233, 207, 0.04);
+  align-items: center;
+}
+
+.proof-cmd {
+  color: rgba(247, 233, 207, 0.85);
+  font-size: 13px;
+}
+
+.proof-line-value {
+  display: grid;
+  gap: 4px;
+  justify-items: end;
+  text-align: right;
+}
+
+.proof-line-value strong {
+  font-family: "SFMono-Regular", "Cascadia Code", ui-monospace, monospace;
+  font-size: 18px;
+  color: var(--paper);
+  font-weight: 500;
+}
+
+.page-footer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--paper-line);
+  border-top: 1px solid var(--paper-line);
+}
+
+.page-footer > div {
+  padding: 26px 28px;
+  background: rgba(16, 16, 14, 0.94);
+}
+
+.page-footer strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--paper);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.theme-payment {
+  --receipt-accent: #d6a35d;
+  --receipt-deep: #7b4d25;
+}
+
+.theme-swap {
+  --receipt-accent: #86b8ce;
+  --receipt-deep: #1d5361;
+}
+
+.theme-denial {
+  --receipt-accent: #d6776d;
+  --receipt-deep: #672a28;
+}
+
+.theme-refund {
+  --receipt-accent: #a8c47a;
+  --receipt-deep: #435c2a;
+}
+
+.theme-result {
+  --receipt-accent: #c9b7ff;
+  --receipt-deep: #5b4d87;
+}
+
+@media (max-width: 1080px) {
+  h1 {
+    font-size: 62px;
+  }
+
+  .proof-object {
+    grid-template-columns: minmax(160px, 200px) minmax(0, 1fr);
+  }
+
+  .receipt-row {
+    grid-template-columns: 44px minmax(140px, 0.6fr) minmax(0, 1fr) auto;
+  }
+}
+
+@media (max-width: 920px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .hero-grid,
+  .proof-object,
+  .status-band,
+  .page-footer {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 46px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .proof-cover {
+    min-height: 200px;
+  }
+}

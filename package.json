@@ -1,0 +1,25 @@
+{
+  "name": "paid-receipt-publisher-xlayer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "anchor:xlayer": "forge script contracts/script/DeployReceiptRegistry.s.sol --rpc-url \"$XLAYER_RPC_URL\" --broadcast",
+    "build": "pnpm demo:proof && pnpm --filter @paid-receipt/skill build && pnpm --filter @paid-receipt/demo build",
+    "demo:proof": "pnpm --filter @paid-receipt/skill demo -- --out ../../outputs/proof-bundle.json --public ../../apps/demo/public/proof-bundle.json --markdown ../../outputs/proof-bundle.md",
+    "dev": "pnpm demo:proof && pnpm --filter @paid-receipt/demo dev --host 127.0.0.1",
+    "format": "prettier --write .",
+    "test": "pnpm --filter @paid-receipt/skill test && forge test",
+    "typecheck": "pnpm --filter @paid-receipt/skill typecheck && pnpm --filter @paid-receipt/demo typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "prettier": "^3.8.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.6"
+  }
+}
