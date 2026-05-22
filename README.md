@@ -1,8 +1,15 @@
-# Paid Receipt Publisher
+# X Cup Proof Receipts
 
-An OnchainOS-ready skill artifact for X Layer agent commerce.
+A World Cup receipt rail for the OKX X Layer X Cup hackathon.
 
-Paid Receipt Publisher turns autonomous agent payments, swaps, denials, refunds, and service results into signed, hash-chained receipt records. The proof bundle can be inspected locally and anchored through the included X Layer `ReceiptRegistry` contract when a funded wallet is authorized.
+X Cup Proof Receipts turns prediction stakes, match hedges, denied risky bets, refunds, and settlement results into signed, hash-chained receipt records. The proof bundle can be inspected locally and anchored through the included X Layer `ReceiptRegistry` contract when a funded wallet is authorized.
+
+## X Cup Fit
+
+- World Cup theme: every record is a match-day receipt for prediction markets, trading hedges, fan-agent policy denials, refunds, or settlement proof.
+- Built on X Layer: the receipt registry contract and proof bundle are prepared for X Layer testnet/mainnet anchoring.
+- Completion and on-chain verifiability: signatures, previous-hash links, live X Layer RPC reads, and optional `ReceiptRegistry` publish path are included.
+- Honest execution: no live write is claimed until a funded deployer, approved wallet, or transaction hash exists.
 
 ## What Ships
 
@@ -30,7 +37,7 @@ http://localhost:5179
 Public demo:
 
 ```bash
-https://gabrielantonyxaviour.github.io/paid-receipt-publisher-xlayer/
+https://joshvajeskins.github.io/paid-receipt-publisher-xlayer/
 ```
 
 ## Live Chain Status
@@ -58,7 +65,7 @@ Do not commit private keys, API keys, wallet exports, or `.env` files.
 1. Generate a proof bundle with `pnpm demo:proof`.
 2. Validate signatures and hash-chain integrity with `pnpm test`.
 3. Inspect the proof dashboard at 375, 768, and 1440 widths.
-4. Publish receipt hashes to X Layer only after wallet authorization exists.
+4. Publish World Cup receipt hashes to X Layer only after wallet authorization exists.
 
 The committed sample proof bundle lives in `examples/`; fresh local runs write current proof output to `outputs/` and `apps/demo/public/`.
 
@@ -66,5 +73,4 @@ The committed sample proof bundle lives in `examples/`; fresh local runs write c
 
 - No live X Layer write transaction has been made in this run.
 - No live x402 payment or OKX DEX swap is claimed.
-- The official Build X public page appears to describe an ended April 1-15, 2026 season unless a reopened portal proves otherwise.
-- Moltbook BuildX rendered for the Gabriel profile but was not logged in, so no draft submission fields were prefilled.
+- Final X Cup form submission, social post, wallet connection, faucet claim, and legal attestation are pending explicit approval.

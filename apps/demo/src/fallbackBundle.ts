@@ -2,20 +2,20 @@ import type { ProofBundle } from "./types";
 
 export const fallbackBundle: ProofBundle = {
   generatedAt: "2026-05-21T00:00:00.000Z",
-  project: "Paid Receipt Publisher",
+  project: "X Cup Proof Receipts",
   chainRoot:
     "0x0000000000000000000000000000000000000000000000000000000000000000",
   receipts: [
     {
       id: "rcpt-fallback",
       kind: "service_result",
-      agent: "publisher.agent.gabriel",
-      counterparty: "judge.proof.reader",
+      agent: "receipt-publisher.agent",
+      counterparty: "xcup-judge-proof-reader",
       amount: "0",
       asset: "N/A",
       network: "local-proof",
       policy: "fallback only",
-      memo: "Run pnpm demo:proof to generate the real proof bundle.",
+      memo: "Run pnpm demo:proof to generate the real X Cup proof bundle.",
       previousHash:
         "0x0000000000000000000000000000000000000000000000000000000000000000",
       receiptHash:
@@ -23,7 +23,8 @@ export const fallbackBundle: ProofBundle = {
       externalAction: {
         label: "fallback",
         status: "blocked",
-        blocker: "Proof bundle has not been generated. Run pnpm demo:proof.",
+        blocker:
+          "X Cup proof bundle has not been generated. Run pnpm demo:proof.",
       },
     },
   ],
@@ -31,7 +32,7 @@ export const fallbackBundle: ProofBundle = {
     status: "blocked",
     network: "xlayer-testnet",
     chainId: 1952,
-    blocker: "Proof bundle has not been generated yet.",
+    blocker: "X Cup proof bundle has not been generated yet.",
   },
   liveReadProof: [],
 };

@@ -57,9 +57,9 @@ export function App() {
           <a
             className="brand"
             href="#top"
-            aria-label="Paid Receipt Publisher home"
+            aria-label="X Cup Proof Receipts home"
           >
-            Paid Receipt Publisher
+            X Cup Proof Receipts
           </a>
           <div className="topbar-actions">
             <a href="#ledger">Ledger</a>
@@ -70,12 +70,12 @@ export function App() {
 
         <div className="hero-grid" id="top">
           <div className="hero-copy">
-            <p className="eyebrow">OnchainOS-ready skill artifact</p>
-            <h1>Agent commerce receipts that survive the dashboard.</h1>
+            <p className="eyebrow">World Cup receipt rail for X Layer</p>
+            <h1>Every match prediction deserves a final whistle receipt.</h1>
             <p className="lede">
-              Every autonomous payment, blocked spend, refund, swap route, and
-              service result becomes a signed hash-chain entry, ready to anchor
-              on X Layer when a wallet is authorized.
+              X Cup Proof Receipts turns prediction stakes, match hedges, denied
+              risky bets, refunds, and settlement results into signed hash-chain
+              entries, ready to anchor on X Layer when a wallet is authorized.
             </p>
             <div className="command-pill" id="commands">
               <span>Reproduce</span>
@@ -83,8 +83,8 @@ export function App() {
             </div>
             <p className="hero-meta">
               Bundle generated <strong>{generatedLabel}</strong> ·{" "}
-              {bundle.receipts.length} receipts in chain · ed25519 signatures
-              verified locally
+              {bundle.receipts.length} World Cup receipts in chain · ed25519
+              signatures verified locally
             </p>
           </div>
 
@@ -135,7 +135,7 @@ function ProofStatus({
         </strong>
         <p>
           ed25519 signatures + linked previous-hash across{" "}
-          {bundle.receipts.length} receipts.
+          {bundle.receipts.length} World Cup receipts.
         </p>
       </div>
       <div>
@@ -184,11 +184,11 @@ function ReceiptLedger({
     <section className="ledger-section" id="ledger">
       <div className="section-heading">
         <p className="eyebrow">Receipt ledger</p>
-        <h2>Five proof chapters, one verifiable chain.</h2>
+        <h2>Five match-day proof chapters, one verifiable chain.</h2>
         <p className="section-lede">
           Each row is a signed receipt linked to the previous one. Color tracks
-          receipt kind; the status pill tracks whether the external action
-          settled, is prepared, or is honestly blocked.
+          prediction, hedge, denial, refund, or settlement evidence; the status
+          pill keeps unfinished live actions honest.
         </p>
       </div>
       <div className="receipt-list" role="tablist" aria-label="Receipts">
@@ -234,10 +234,14 @@ function ReadProof({ bundle }: { bundle: ProofBundle }) {
     <section className="read-proof">
       <div className="section-heading">
         <p className="eyebrow">Live read evidence</p>
-        <h2>Read access to X Layer is proven; writes require authorization.</h2>
+        <h2>
+          X Layer read access is proven; live anchoring waits for authorization.
+        </h2>
         <p className="section-lede">
           Raw <code>cast</code> output captured against public RPCs. These
-          commands are reproducible without any wallet.
+          commands are reproducible without any wallet, while writes remain
+          blocked until a funded deployer or approved Agentic Wallet path
+          exists.
         </p>
       </div>
       <div className="proof-lines">
