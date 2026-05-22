@@ -1,0 +1,163 @@
+{
+  "generatedAt": "2026-05-22T00:35:30.310Z",
+  "project": "X Cup Proof Receipts",
+  "chainRoot": "0x6844b2a059fc1b0de8020286053487d2379a16333742591c64e7c17cd0848bdd",
+  "receipts": [
+    {
+      "id": "rcpt-payment-001",
+      "kind": "payment",
+      "agent": "prediction.agent.jeskins",
+      "counterparty": "argentina-france-market",
+      "amount": "0.0100",
+      "asset": "USDC",
+      "network": "xlayer-testnet",
+      "policy": "approved: stake is under fan-agent cap and market is allowlisted",
+      "memo": "World Cup prediction stake receipt for Argentina vs France regulation-time market.",
+      "timestamp": "2026-05-22T00:35:30.310Z",
+      "externalAction": {
+        "label": "prediction stake",
+        "status": "prepared",
+        "txHash": null,
+        "url": null,
+        "blocker": "No authorized X Layer deployer or fan wallet key in this session."
+      },
+      "previousHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "receiptHash": "0x8ea17ef94f4a2191fe9603fcd65a418a8216d9ee96f745854df30495d60dc96a",
+      "signature": {
+        "scheme": "ed25519",
+        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAreWl8VlYWfhYyzbUZShr/HCuoFPglxEl/ah5pkYaHpU=\n-----END PUBLIC KEY-----\n",
+        "valueBase64": "DRLeeY3dXBzvk0X1Nd8d8706H52CJxVL51lOx46nDSqO94RK5x0RHxfsHh2S2Ce+oildl24Aab3v1ha9xrzlBg=="
+      }
+    },
+    {
+      "id": "rcpt-swap-001",
+      "kind": "swap",
+      "agent": "odds-router.agent",
+      "counterparty": "okx-dex-match-hedge-route",
+      "amount": "0.0025",
+      "asset": "OKB",
+      "network": "xlayer-mainnet",
+      "policy": "blocked: no wallet approval for live match hedge route",
+      "memo": "Receipt records the intended World Cup odds hedge route without inventing a transaction.",
+      "timestamp": "2026-05-22T00:35:30.310Z",
+      "externalAction": {
+        "label": "World Cup hedge route",
+        "status": "blocked",
+        "txHash": null,
+        "url": null,
+        "blocker": "Connect wallet and approve route before publishing a hedge receipt."
+      },
+      "previousHash": "0x8ea17ef94f4a2191fe9603fcd65a418a8216d9ee96f745854df30495d60dc96a",
+      "receiptHash": "0x46be94ab359c7e839532d173ed41d0973fdd7534726a35ab0f34c85912579dcb",
+      "signature": {
+        "scheme": "ed25519",
+        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAreWl8VlYWfhYyzbUZShr/HCuoFPglxEl/ah5pkYaHpU=\n-----END PUBLIC KEY-----\n",
+        "valueBase64": "p5zF2gLKrDZj2eGgHhS6rHrLYrr0ts/kkMUApuVVde8JhEd6t/0MtRZze3a2A1NH4JWaiuns2XKNdfXTt4i3DA=="
+      }
+    },
+    {
+      "id": "rcpt-denial-001",
+      "kind": "denial",
+      "agent": "fairplay-policy.agent",
+      "counterparty": "unverified-match-tipster",
+      "amount": "0.2500",
+      "asset": "USDC",
+      "network": "xlayer-testnet",
+      "policy": "denied: exceeds match stake cap and tipster source is not allowlisted",
+      "memo": "Denial receipts make blocked World Cup fan-agent actions auditable.",
+      "timestamp": "2026-05-22T00:35:30.310Z",
+      "externalAction": {
+        "label": "fan-agent policy gate",
+        "status": "observed",
+        "txHash": null,
+        "url": null,
+        "blocker": null
+      },
+      "previousHash": "0x46be94ab359c7e839532d173ed41d0973fdd7534726a35ab0f34c85912579dcb",
+      "receiptHash": "0x2191c1d3f1cf242007fd92543e59eb0246eefd0246496fbe1c3eccef3f5e32e0",
+      "signature": {
+        "scheme": "ed25519",
+        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAreWl8VlYWfhYyzbUZShr/HCuoFPglxEl/ah5pkYaHpU=\n-----END PUBLIC KEY-----\n",
+        "valueBase64": "4ostfNJAdHpiG8x88IZ+V93ixeHESgOZ2e8wARRYqrWXwg2J807ERQKYf+GfB0zd6o7dazYMpbY0nyogyg04Cw=="
+      }
+    },
+    {
+      "id": "rcpt-refund-001",
+      "kind": "refund",
+      "agent": "settlement.agent",
+      "counterparty": "rain-delay-void-market",
+      "amount": "0.0100",
+      "asset": "USDC",
+      "network": "xlayer-testnet",
+      "policy": "prepared: refund path available after voided or postponed match market",
+      "memo": "Refund receipt links World Cup settlement remediation to the same proof chain.",
+      "timestamp": "2026-05-22T00:35:30.310Z",
+      "externalAction": {
+        "label": "void-market refund",
+        "status": "prepared",
+        "txHash": null,
+        "url": null,
+        "blocker": "Refund publish awaits funded test wallet or approved Agentic Wallet session."
+      },
+      "previousHash": "0x2191c1d3f1cf242007fd92543e59eb0246eefd0246496fbe1c3eccef3f5e32e0",
+      "receiptHash": "0x8a40997934a5938cdd059c2b4692789391394ae029ea14552a7c77aeecfae8f3",
+      "signature": {
+        "scheme": "ed25519",
+        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAreWl8VlYWfhYyzbUZShr/HCuoFPglxEl/ah5pkYaHpU=\n-----END PUBLIC KEY-----\n",
+        "valueBase64": "aP5wybu1pBTYyDlfuxDbj4pbE66Hi6VDIHZHya669xttOrXZxcymrrPcGP0nGsd3tei4G888c3LlsrB1eFADCQ=="
+      }
+    },
+    {
+      "id": "rcpt-result-001",
+      "kind": "service_result",
+      "agent": "receipt-publisher.agent",
+      "counterparty": "xcup-judge-proof-reader",
+      "amount": "0",
+      "asset": "N/A",
+      "network": "local-proof",
+      "policy": "settled-local: proof bundle generated and signature verified",
+      "memo": "Final receipt seals the World Cup proof bundle before optional X Layer anchoring.",
+      "timestamp": "2026-05-22T00:35:30.310Z",
+      "externalAction": {
+        "label": "proof bundle export",
+        "status": "settled",
+        "txHash": null,
+        "url": "outputs/proof-bundle.json",
+        "blocker": null
+      },
+      "previousHash": "0x8a40997934a5938cdd059c2b4692789391394ae029ea14552a7c77aeecfae8f3",
+      "receiptHash": "0x6844b2a059fc1b0de8020286053487d2379a16333742591c64e7c17cd0848bdd",
+      "signature": {
+        "scheme": "ed25519",
+        "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAreWl8VlYWfhYyzbUZShr/HCuoFPglxEl/ah5pkYaHpU=\n-----END PUBLIC KEY-----\n",
+        "valueBase64": "hd6oEpTIx6xvl76K5LhkqLkXEsuTfwL40ux3+zDqyoW+IyvJVSFmEgVv0FY2X860CGwBfaxQ5HlGB0hGVQvEAA=="
+      }
+    }
+  ],
+  "chainPublish": {
+    "status": "blocked",
+    "network": "xlayer-testnet",
+    "chainId": 1952,
+    "contractAddress": null,
+    "txHash": null,
+    "explorerUrl": null,
+    "blocker": "DEPLOYER_PRIVATE_KEY or Agentic Wallet authorization is required before anchoring World Cup receipt roots on X Layer."
+  },
+  "liveReadProof": [
+    {
+      "command": "cast chain-id --rpc-url https://testrpc.xlayer.tech/terigon",
+      "result": "1952",
+      "observedAt": "2026-05-21T06:00:31+05:30"
+    },
+    {
+      "command": "cast block-number --rpc-url https://testrpc.xlayer.tech/terigon",
+      "result": "30864734",
+      "observedAt": "2026-05-21T06:00:31+05:30"
+    },
+    {
+      "command": "cast chain-id --rpc-url https://xlayerrpc.okx.com",
+      "result": "196",
+      "observedAt": "2026-05-21T06:00:31+05:30"
+    }
+  ]
+}
